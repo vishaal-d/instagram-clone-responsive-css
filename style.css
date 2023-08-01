@@ -89,10 +89,12 @@ section{
     background-color: white;
     border: 1px solid rgba(219, 219, 219, 1);
     border-radius: 3px;
+    margin-bottom: 15px;
 }
 
 .stories{
-    width: 17%;
+    width: 14%;
+    align-items: center;
 
 }
 
@@ -109,12 +111,12 @@ section{
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #262626;
-    font-size: 20px;
+    font-size: 15px;
+    text-align: center;
+    margin-left: -10px;
 }
 
-/* .right-side{
-    width: 35%;
-} */
+
 
 /* Posts */
 
@@ -123,6 +125,7 @@ section{
     background-color: white;
     border: 1px solid rgba(219, 219, 219, 1);
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 .posts .post-title{
@@ -232,7 +235,142 @@ section{
 }
 
 .comments{
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(77, 77, 77);
 
 }
+
+.right-sidee{
+    width: 35%;
+    margin-top: 15px;
+    position: fixed;
+    right: 30px;
+}
+
+.right-sidee .profile-title{
+    display: flex;
+    align-items: center;
+}
+
+.right-sidee .profile-title .profile-left{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.dp img{
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.uname{
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.suggestions{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.suggestions p{
+    margin-right:68px;
+}
+
+.suggestions p:last-child{
+    margin-right:0;
+}
+
+.suggestion-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.suggest-left{
+    display: flex;
+    align-items:center ;
+    margin-right: 50px;
+}
+
+.s-image img{
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.s-details{
+    margin-bottom: 3px;
+}
+
+.suggest-right p{
+    color: rgb(0, 149, 255);
+}
+
+.s-location{
+    color: rgb(157, 156, 156);
+    font-size: small;
+    margin-top: 3px;
+}
+
+.s-name{
+    font-weight: bold;
+}
+
+.profile-right p{
+    color: rgb(0, 149, 255);
+}
+
+.surname{
+    color: rgb(77, 77, 77);
+}
+
+.sfy{
+    color: rgb(77, 77, 77);
+}
+
+.seeall{
+    font-weight: 450;
+}
+
+.footer p{
+    font-size: 14px;
+    color: lightgray;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 992px){
+    header{
+        padding: 10px 20px;
+    }
+    section .left-side{
+        width: 100%;
+    }
+    section .right-sidee{
+        display: none;
+    }
+
+}
+
+@media (max-width:768px){
+    header .search-box{
+        display: none;
+    }
+    section{
+        padding: 30px 20px;
+    }
+}
+
+@media(max-width:576px){
+    .story .stories{
+        width: 25%;
+    }
+    header nav ul li{
+        margin-right: 10px;
+    }
+}
+
